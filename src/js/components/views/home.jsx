@@ -14,7 +14,7 @@ let Home = React.createClass({
         <NavBar />
         <Content url="/submitted" />
         <HowItWorks />
-        <Social />
+        // <Social />
       </div>
     );
   }
