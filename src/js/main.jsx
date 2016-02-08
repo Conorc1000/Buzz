@@ -17,10 +17,10 @@ let rootElement = document.getElementById('react-content');
 render((
   <Router>
     <Route path="/">
+      <Route path="live-offers" component={OffersPage} />
       <Route path="bar" component={BarLogin} />
       <Route path="create-offers" component={CreateOffers} />
       <Route path="customer" component={CustomerLogin} />
-      <Route path="live-offers" component={OffersPage} />
     </Route>
   </Router>
 ), rootElement);
