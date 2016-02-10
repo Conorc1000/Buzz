@@ -1,14 +1,25 @@
 import React from 'react';
 
-let SocialMediaLinks = React.createClass({
-  render: function() {
+var BarContact = React.createClass({
 
+  componentDidMount: function() {
+
+  },
+
+  render: function() {
     return (
       <div>
-        <h4>Are you a business? Get on our radar!</h4>
-        <div className='email'>Email us at office@hava-app.com</div>
-        <div className='go-on'>do it...you know you want to</div>
-        <div className='row social'>
+        <h2>Contact Us</h2>
+
+          <p>
+            Call the Hava office at: 07xxxxxxxxx
+          </p>
+          <p>
+            Email us at:
+            <a href="mailto:office@hava-app.com" target="_top"> office@hava-app.com</a>
+          </p>
+
+          <div className='row social'>
           <a href="https://www.instagram.com/thehavaapp/">
             <img className='icon-in' src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/instagram-4096-black.png"/>
           </a>
@@ -20,8 +31,8 @@ let SocialMediaLinks = React.createClass({
           </a>
         </div>
       </div>
-    );
+    )
   }
 });
 
-module.exports = SocialMediaLinks;
+export default BarContact;
